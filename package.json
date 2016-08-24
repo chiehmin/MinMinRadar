@@ -1,8 +1,5 @@
 {
   "name": "MinMinRadar",
   "version": "0.1.0",
-  "main": "main.js",
-  "dependencies": {
-    "pokemon": "^0.7.0"
-  }
+  "main": "main.js"
 }

@@ -27,7 +27,10 @@ $(function() {
     setInterval(function() {
       for(let j = 0; j < wanted.length; j++) {
         let pokeId = wanted[j];
-        $.get(`https://www.pokeradar.io/api/v1/submissions?minLatitude=20.848545148787238&maxLatitude=26.509904531413927&minLongitude=114.027099609375&maxLongitude=131.385498046875&pokemonId=${pokeId}`, function(data, status) {
+
+        // bottom left = 21.940976, 119.778371
+        // upper right = 25.232740, 122.112966
+        $.get(`https://www.pokeradar.io/api/v1/submissions?minLatitude=21.940976&maxLatitude=25.232740&minLongitude=119.778371&maxLongitude=122.112966&pokemonId=${pokeId}`, function(data, status) {
           let appeared = data.data;
           
   /*
