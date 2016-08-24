@@ -25,30 +25,32 @@ $(function() {
     console.log(wanted);
     founded = new Set();
     setInterval(function() {
-      $.get("https://www.pokeradar.io/api/v1/submissions?minLatitude=24.499020811600275&maxLatitude=24.82537857544687&minLongitude=120.61477661132811&maxLongitude=121.69967651367188&pokemonId=0", function(data, status) {
-        let appeared = data.data;
-        
-/*
-{"id":"1472022748-13-24.8065778307838-120.958815121044","created":1472022748,"downvotes":0,"upvotes":1,"latitude":24.8065778307838,"longitude":120.958815121044,"pokemonId":13,"trainerName":"(Poke Radar Prediction)","userId":"13661365","deviceId":"80sxy0vumg2h5hhv8hgc0axt9jr29al7"}
-*/
-
-        for(let i = 0; i < appeared.length; i++) {
-          let id = appeared[i].id;
-          let trainerName = appeared[i].trainerName;
-          let pokeId = appeared[i].pokemonId;
+      for(let j = 0; j < wanted.length; j++) {
+        let pokeId = wanted[j];
+        $.get(`https://www.pokeradar.io/api/v1/submissions?minLatitude=20.848545148787238&maxLatitude=26.509904531413927&minLongitude=114.027099609375&maxLongitude=131.385498046875&pokemonId=${pokeId}`, function(data, status) {
+          let appeared = data.data;
           
-          if(trainerName == "(Poke Radar Prediction)" && wanted.indexOf(pokeId) != -1 && !founded.has(id)) {
-            console.log(pokeId);
-            let lat = appeared[i].latitude;
-            let long = appeared[i].longitude;
-            let pokeName = pokemons[pokeId - 1];
-            let option = {title: pokeName, body: `Found pokemon at ${lat}, ${long}!!`};
-            new Notification(option.title, option);
-            $("#result-panel").append(`<div><a href="https://www.google.com/maps/@${lat},${long},15z", target="_blank">${pokeName}</a></div>`);
-            founded.add(id);
+  /*
+  {"id":"1472022748-13-24.8065778307838-120.958815121044","created":1472022748,"downvotes":0,"upvotes":1,"latitude":24.8065778307838,"longitude":120.958815121044,"pokemonId":13,"trainerName":"(Poke Radar Prediction)","userId":"13661365","deviceId":"80sxy0vumg2h5hhv8hgc0axt9jr29al7"}
+  */
+          for(let i = 0; i < appeared.length; i++) {
+            let id = appeared[i].id;
+            let trainerName = appeared[i].trainerName;
+            let pokeId = appeared[i].pokemonId;
+            
+            if(trainerName == "(Poke Radar Prediction)" && !founded.has(id)) {
+              console.log(pokeId);
+              let lat = appeared[i].latitude;
+              let long = appeared[i].longitude;
+              let pokeName = pokemons[pokeId - 1];
+              let option = {title: pokeName, body: `Found pokemon at ${lat}, ${long}!!`};
+              new Notification(option.title, option);
+              $("#result-panel").append(`<div><a href="http://maps.google.com/maps?q=loc:${lat},${long}", target="_blank">${pokeName}</a></div>`);
+              founded.add(id);
+            }
           }
-        }
-      });
+        });
+      }
     }, 10000)
   });
 
