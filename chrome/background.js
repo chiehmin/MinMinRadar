@@ -80,6 +80,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     console.log("Stopping MinMinRadar...");
     isRunning = false;
     clearInterval(radarId);
+    db = {};
   }
   else if(request.request == "getPokemons") {
     sendResponse(db);
