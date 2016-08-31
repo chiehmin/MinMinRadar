@@ -10,6 +10,13 @@ function initialUIUpdate() {
     isRunning = rspd["isRunning"];
     refreshCtrl();
   });
+  chrome.runtime.sendMessage({request: "getPokemons"}, function(db) {
+    for(let key in db) {
+      let pokemon = db[key];
+      let pokeName = pokemons[pokemon.pkId - 1].name_cht;
+      $("#result-panel").append(`<div><a href="http://maps.google.com/maps?q=loc:${pokemon.lat},${pokemon.lng}", target="_blank">${pokeName} -- 消失時間 ${pokemon.vanish_at}</a></div>`);
+    }
+  });
 }
 
 $(function() {
@@ -21,6 +28,7 @@ $(function() {
     } else {
       isRunning = false;
       chrome.runtime.sendMessage({request: "stop"});
+      $("#result-panel").empty();
     }
     refreshCtrl();
   });

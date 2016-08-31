@@ -4,9 +4,9 @@ var wanted = [3, 6, 9, 131, 143, 149];
 var db = {};
 
 var queryUrls = [
-  {loc: "北投", url: 'https://pkgo.tw/api/pokemons/25.13910546417688,121.58112317690734/25.091465633354726,121.41632825503234'},  
-  {loc: "南寮", url: 'https://pkgo.tw/api/pokemons/24.860776604958343,121.04742795596007/24.813028834259338,120.88263303408507'},
-  {loc: "旗津", url: 'https://pkgo.tw/api/pokemons/22.633934067084056,120.42069226870422/22.585363496621607,120.25589734682922'}  
+  {loc: "臺北", url: 'https://pkgo.tw/api/pokemons/25.204206,121.603187/24.977332,121.354207'},  
+  {loc: "新竹", url: 'https://pkgo.tw/api/pokemons/24.856668,121.022073/24.792551,120.896563'},
+  {loc: "高雄", url: 'https://pkgo.tw/api/pokemons/22.690925,120.347358/22.498783,120.265457'}  
 ]
 
 function showPokemonNotification(pkId, radarId, lat, lng) {
@@ -14,8 +14,8 @@ function showPokemonNotification(pkId, radarId, lat, lng) {
   chrome.notifications.create(radarId, {
     type: 'basic',
     iconUrl: 'icon.png',
-    title: 'Find ' + pokemon.name + ' !!!',
-    message: 'Location: ' + lat + ", " + lng
+    title: `發現 ${pokemon.name_cht} !!!`,
+    message: `地點: ${db[radarId].loc}, 消失時間: ${db[radarId].vanish_at}`
   }, function(notificationId) {});
 }
 
@@ -26,11 +26,16 @@ chrome.notifications.onClicked.addListener(function(notificationId) {
   chrome.tabs.create({ url: `http://maps.google.com/maps?q=loc:${lat},${lng}` });
 });
 
+function formateDate(date) {
+  return `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+}
+
 function radarFunc() {
   console.log("searching...");
 
   // bottom left = 21.940976, 119.778371
   // upper right = 25.232740, 122.112966
+  
   queryUrls.forEach(function(url, index) {
     $.get(url.url, function(data, status) {
       let appeared = data["pokemons"];
@@ -48,8 +53,11 @@ function radarFunc() {
         if(db[radarId] || wanted.indexOf(pokeId) == -1) return;
 
         db[radarId] = {
+          pkId: pokeId,
           lat: lat,
-          lng: lng
+          lng: lng,
+          loc: url.loc,
+          vanish_at: formateDate(new Date(ele["vanish_at"]))
         };
         showPokemonNotification(pokeId, radarId, lat, lng);
       });
@@ -62,8 +70,8 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   if(request.request == "isRunning") {
     console.log("check isRunning");
     sendResponse({"isRunning": isRunning});
-  }
-  if(request.request == "start") {
+  } 
+  else if(request.request == "start") {
     console.log("Starting MinMinRadar...");
     isRunning = true;
     radarId = setInterval(radarFunc, 10000);
@@ -72,5 +80,8 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     console.log("Stopping MinMinRadar...");
     isRunning = false;
     clearInterval(radarId);
+  }
+  else if(request.request == "getPokemons") {
+    sendResponse(db);
   }
 });
