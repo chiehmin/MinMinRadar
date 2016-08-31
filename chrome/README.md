@@ -6,3 +6,4 @@ Installation via [chrome webstore](https://chrome.google.com/webstore/detail/jci
 
 ![](screenshots/demo1.png)
 ![](screenshots/demo2.png)
+![](screenshots/demo3.png)
