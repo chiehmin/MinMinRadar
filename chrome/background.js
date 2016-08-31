@@ -2,12 +2,24 @@ var isRunning = false;
 var radarId;
 var wanted = [3, 6, 9, 131, 143, 149];
 var db = {};
+localStorage["pokemons"] = localStorage["pokemons"] || JSON.stringify({3: true, 6: true, 9: true, 131: true, 143: true, 149: true});
+reloadWanted();
 
 var queryUrls = [
   {loc: "臺北", url: 'https://pkgo.tw/api/pokemons/25.204206,121.603187/24.977332,121.354207'},  
   {loc: "新竹", url: 'https://pkgo.tw/api/pokemons/24.856668,121.022073/24.792551,120.896563'},
   {loc: "高雄", url: 'https://pkgo.tw/api/pokemons/22.690925,120.347358/22.498783,120.265457'}  
 ]
+
+function reloadWanted() {
+  var notifyPokemons = JSON.parse(localStorage["pokemons"]);
+  wanted = [];
+  for(var key in notifyPokemons) {
+    if(notifyPokemons[key]) {
+      wanted.push(parseInt(key));
+    }
+  }
+}
 
 function showPokemonNotification(pkId, radarId, lat, lng) {
   let pokemon = pokemons[pkId - 1];
@@ -84,5 +96,8 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   }
   else if(request.request == "getPokemons") {
     sendResponse(db);
+  }
+  else if(request.request == "reloadWanted") {
+    reloadWanted();
   }
 });
