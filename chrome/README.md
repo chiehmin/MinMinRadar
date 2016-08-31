@@ -1,6 +1,6 @@
 # MinMinRadar
 
-Find and show rare pokemon in real time.
+Find and show rare pokemons in real time.
 
 Installation via [chrome webstore](https://chrome.google.com/webstore/detail/jcijiahnkdhhhhgpgpjpbkgahbmhbnlg/).
 
