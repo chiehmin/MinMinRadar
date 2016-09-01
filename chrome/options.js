@@ -20,6 +20,7 @@ $(function() {
   $("#opt_tp").prop("checked", areas.tp);
   $("#opt_hc").prop("checked", areas.hc);
   $("#opt_kh").prop("checked", areas.kh);
+  $("#opt_nearby").prop("checked", areas.nearby);
 
   // pokemons settings
   let container = $("#pokemons-selection");
