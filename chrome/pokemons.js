@@ -2,755 +2,755 @@ var pokemons = [{
   id: 1,
   name: "Bulbasaur",
   name_cht: "妙蛙種子",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/001.png"
+  img_src: "pkIcons/001.png"
 }, {
   id: 2,
   name: "Ivysaur",
   name_cht: "妙蛙草",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/002.png"
+  img_src: "pkIcons/002.png"
 }, {
   id: 3,
   name: "Venusaur",
   name_cht: "妙蛙花",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/003.png"
+  img_src: "pkIcons/003.png"
 }, {
   id: 4,
   name: "Charmander",
   name_cht: "小火龍",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/004.png"
+  img_src: "pkIcons/004.png"
 }, {
   id: 5,
   name: "Charmeleon",
   name_cht: "火恐龍",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/005.png"
+  img_src: "pkIcons/005.png"
 }, {
   id: 6,
   name: "Charizard",
   name_cht: "噴火龍",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/006.png"
+  img_src: "pkIcons/006.png"
 }, {
   id: 7,
   name: "Squirtle",
   name_cht: "傑尼龜",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/007.png"
+  img_src: "pkIcons/007.png"
 }, {
   id: 8,
   name: "Wartortle",
   name_cht: "卡咪龜",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/008.png"
+  img_src: "pkIcons/008.png"
 }, {
   id: 9,
   name: "Blastoise",
   name_cht: "水箭龜",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/009.png"
+  img_src: "pkIcons/009.png"
 }, {
   id: 10,
   name: "Caterpie",
   name_cht: "綠毛蟲",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/010.png"
+  img_src: "pkIcons/010.png"
 }, {
   id: 11,
   name: "Metapod",
   name_cht: "鐵甲蛹",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/011.png"
+  img_src: "pkIcons/011.png"
 }, {
   id: 12,
   name: "Butterfree",
   name_cht: "巴大蝴",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/012.png"
+  img_src: "pkIcons/012.png"
 }, {
   id: 13,
   name: "Weedle",
   name_cht: "獨角蟲",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/013.png"
+  img_src: "pkIcons/013.png"
 }, {
   id: 14,
   name: "Kakuna",
   name_cht: "鐵殼昆",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/014.png"
+  img_src: "pkIcons/014.png"
 }, {
   id: 15,
   name: "Beedrill",
   name_cht: "大針蜂",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/015.png"
+  img_src: "pkIcons/015.png"
 }, {
   id: 16,
   name: "Pidgey",
   name_cht: "波波",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/016.png"
+  img_src: "pkIcons/016.png"
 }, {
   id: 17,
   name: "Pidgeotto",
   name_cht: "比比鳥",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/017.png"
+  img_src: "pkIcons/017.png"
 }, {
   id: 18,
   name: "Pidgeot",
   name_cht: "比鵰",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/018.png"
+  img_src: "pkIcons/018.png"
 }, {
   id: 19,
   name: "Rattata",
   name_cht: "小拉達",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/019.png"
+  img_src: "pkIcons/019.png"
 }, {
   id: 20,
   name: "Raticate",
   name_cht: "拉達",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/020.png"
+  img_src: "pkIcons/020.png"
 }, {
   id: 21,
   name: "Spearow",
   name_cht: "烈雀",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/021.png"
+  img_src: "pkIcons/021.png"
 }, {
   id: 22,
   name: "Fearow",
   name_cht: "大嘴雀",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/022.png"
+  img_src: "pkIcons/022.png"
 }, {
   id: 23,
   name: "Ekans",
   name_cht: "阿柏蛇",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/023.png"
+  img_src: "pkIcons/023.png"
 }, {
   id: 24,
   name: "Arbok",
   name_cht: "阿柏怪",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/024.png"
+  img_src: "pkIcons/024.png"
 }, {
   id: 25,
   name: "Pikachu",
   name_cht: "皮卡丘",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/025.png"
+  img_src: "pkIcons/025.png"
 }, {
   id: 26,
   name: "Raichu",
   name_cht: "雷丘",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/026.png"
+  img_src: "pkIcons/026.png"
 }, {
   id: 27,
   name: "Sandshrew",
   name_cht: "穿山鼠",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/027.png"
+  img_src: "pkIcons/027.png"
 }, {
   id: 28,
   name: "Sandslash",
   name_cht: "穿山王",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/028.png"
+  img_src: "pkIcons/028.png"
 }, {
   id: 29,
   name: "Nidoran♀",
   name_cht: "尼多蘭",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/029.png"
+  img_src: "pkIcons/029.png"
 }, {
   id: 30,
   name: "Nidorina",
   name_cht: "尼多娜",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/030.png"
+  img_src: "pkIcons/030.png"
 }, {
   id: 31,
   name: "Nidoqueen",
   name_cht: "尼多后",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/031.png"
+  img_src: "pkIcons/031.png"
 }, {
   id: 32,
   name: "Nidoran♂",
   name_cht: "尼多朗",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/032.png"
+  img_src: "pkIcons/032.png"
 }, {
   id: 33,
   name: "Nidorino",
   name_cht: "尼多力諾",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/033.png"
+  img_src: "pkIcons/033.png"
 }, {
   id: 34,
   name: "Nidoking",
   name_cht: "尼多王",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/034.png"
+  img_src: "pkIcons/034.png"
 }, {
   id: 35,
   name: "Clefairy",
   name_cht: "皮皮",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/035.png"
+  img_src: "pkIcons/035.png"
 }, {
   id: 36,
   name: "Clefable",
   name_cht: "皮可西",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/036.png"
+  img_src: "pkIcons/036.png"
 }, {
   id: 37,
   name: "Vulpix",
   name_cht: "六尾",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/037.png"
+  img_src: "pkIcons/037.png"
 }, {
   id: 38,
   name: "Ninetales",
   name_cht: "九尾",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/038.png"
+  img_src: "pkIcons/038.png"
 }, {
   id: 39,
   name: "Jigglypuff",
   name_cht: "胖丁",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/039.png"
+  img_src: "pkIcons/039.png"
 }, {
   id: 40,
   name: "Wigglytuff",
   name_cht: "胖可丁",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/040.png"
+  img_src: "pkIcons/040.png"
 }, {
   id: 41,
   name: "Zubat",
   name_cht: "超音蝠",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/041.png"
+  img_src: "pkIcons/041.png"
 }, {
   id: 42,
   name: "Golbat",
   name_cht: "大嘴蝠",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/042.png"
+  img_src: "pkIcons/042.png"
 }, {
   id: 43,
   name: "Oddish",
   name_cht: "走路草",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/043.png"
+  img_src: "pkIcons/043.png"
 }, {
   id: 44,
   name: "Gloom",
   name_cht: "臭臭花",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/044.png"
+  img_src: "pkIcons/044.png"
 }, {
   id: 45,
   name: "Vileplume",
   name_cht: "霸王花",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/045.png"
+  img_src: "pkIcons/045.png"
 }, {
   id: 46,
   name: "Paras",
   name_cht: "派拉斯",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/046.png"
+  img_src: "pkIcons/046.png"
 }, {
   id: 47,
   name: "Parasect",
   name_cht: "派拉斯特",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/047.png"
+  img_src: "pkIcons/047.png"
 }, {
   id: 48,
   name: "Venonat",
   name_cht: "毛球",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/048.png"
+  img_src: "pkIcons/048.png"
 }, {
   id: 49,
   name: "Venomoth",
   name_cht: "末入蛾",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/049.png"
+  img_src: "pkIcons/049.png"
 }, {
   id: 50,
   name: "Diglett",
   name_cht: "地鼠",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/050.png"
+  img_src: "pkIcons/050.png"
 }, {
   id: 51,
   name: "Dugtrio",
   name_cht: "三地鼠",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/051.png"
+  img_src: "pkIcons/051.png"
 }, {
   id: 52,
   name: "Meowth",
   name_cht: "喵喵",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/052.png"
+  img_src: "pkIcons/052.png"
 }, {
   id: 53,
   name: "Persian",
   name_cht: "貓老大",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/053.png"
+  img_src: "pkIcons/053.png"
 }, {
   id: 54,
   name: "Psyduck",
   name_cht: "可達鴨",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/054.png"
+  img_src: "pkIcons/054.png"
 }, {
   id: 55,
   name: "Golduck",
   name_cht: "哥達鴨",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/055.png"
+  img_src: "pkIcons/055.png"
 }, {
   id: 56,
   name: "Mankey",
   name_cht: "猴怪",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/056.png"
+  img_src: "pkIcons/056.png"
 }, {
   id: 57,
   name: "Primeape",
   name_cht: "火爆猴",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/057.png"
+  img_src: "pkIcons/057.png"
 }, {
   id: 58,
   name: "Growlithe",
   name_cht: "卡蒂狗",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/058.png"
+  img_src: "pkIcons/058.png"
 }, {
   id: 59,
   name: "Arcanine",
   name_cht: "風速狗",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/059.png"
+  img_src: "pkIcons/059.png"
 }, {
   id: 60,
   name: "Poliwag",
   name_cht: "蚊香蝌蚪",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/060.png"
+  img_src: "pkIcons/060.png"
 }, {
   id: 61,
   name: "Poliwhirl",
   name_cht: "蚊香蛙",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/061.png"
+  img_src: "pkIcons/061.png"
 }, {
   id: 62,
   name: "Poliwrath",
   name_cht: "快泳蛙",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/062.png"
+  img_src: "pkIcons/062.png"
 }, {
   id: 63,
   name: "Abra",
   name_cht: "凱西",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/063.png"
+  img_src: "pkIcons/063.png"
 }, {
   id: 64,
   name: "Kadabra",
   name_cht: "勇吉拉",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/064.png"
+  img_src: "pkIcons/064.png"
 }, {
   id: 65,
   name: "Alakazam",
   name_cht: "胡地",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/065.png"
+  img_src: "pkIcons/065.png"
 }, {
   id: 66,
   name: "Machop",
   name_cht: "腕力",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/066.png"
+  img_src: "pkIcons/066.png"
 }, {
   id: 67,
   name: "Machoke",
   name_cht: "豪力",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/067.png"
+  img_src: "pkIcons/067.png"
 }, {
   id: 68,
   name: "Machamp",
   name_cht: "怪力",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/068.png"
+  img_src: "pkIcons/068.png"
 }, {
   id: 69,
   name: "Bellsprout",
   name_cht: "喇叭芽",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/069.png"
+  img_src: "pkIcons/069.png"
 }, {
   id: 70,
   name: "Weepinbell",
   name_cht: "口呆花",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/070.png"
+  img_src: "pkIcons/070.png"
 }, {
   id: 71,
   name: "Victreebel",
   name_cht: "大食花",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/071.png"
+  img_src: "pkIcons/071.png"
 }, {
   id: 72,
   name: "Tentacool",
   name_cht: "瑪瑙水母",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/072.png"
+  img_src: "pkIcons/072.png"
 }, {
   id: 73,
   name: "Tentacruel",
   name_cht: "毒刺水母",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/073.png"
+  img_src: "pkIcons/073.png"
 }, {
   id: 74,
   name: "Geodude",
   name_cht: "小拳石",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/074.png"
+  img_src: "pkIcons/074.png"
 }, {
   id: 75,
   name: "Graveler",
   name_cht: "隆隆石",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/075.png"
+  img_src: "pkIcons/075.png"
 }, {
   id: 76,
   name: "Golem",
   name_cht: "隆隆岩",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/076.png"
+  img_src: "pkIcons/076.png"
 }, {
   id: 77,
   name: "Ponyta",
   name_cht: "小火馬",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/077.png"
+  img_src: "pkIcons/077.png"
 }, {
   id: 78,
   name: "Rapidash",
   name_cht: "烈焰馬",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/078.png"
+  img_src: "pkIcons/078.png"
 }, {
   id: 79,
   name: "Slowpoke",
   name_cht: "呆呆獸",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/079.png"
+  img_src: "pkIcons/079.png"
 }, {
   id: 80,
   name: "Slowbro",
   name_cht: "呆河馬",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/080.png"
+  img_src: "pkIcons/080.png"
 }, {
   id: 81,
   name: "Magnemite",
   name_cht: "小磁怪",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/081.png"
+  img_src: "pkIcons/081.png"
 }, {
   id: 82,
   name: "Magneton",
   name_cht: "三合一磁怪",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/082.png"
+  img_src: "pkIcons/082.png"
 }, {
   id: 83,
   name: "Farfetch'd",
   name_cht: "大蔥鴨",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/083.png"
+  img_src: "pkIcons/083.png"
 }, {
   id: 84,
   name: "Doduo",
   name_cht: "嘟嘟",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/084.png"
+  img_src: "pkIcons/084.png"
 }, {
   id: 85,
   name: "Dodrio",
   name_cht: "嘟嘟利",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/085.png"
+  img_src: "pkIcons/085.png"
 }, {
   id: 86,
   name: "Seel",
   name_cht: "小海獅",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/086.png"
+  img_src: "pkIcons/086.png"
 }, {
   id: 87,
   name: "Dewgong",
   name_cht: "白海獅",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/087.png"
+  img_src: "pkIcons/087.png"
 }, {
   id: 88,
   name: "Grimer",
   name_cht: "臭泥",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/088.png"
+  img_src: "pkIcons/088.png"
 }, {
   id: 89,
   name: "Muk",
   name_cht: "臭臭泥",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/089.png"
+  img_src: "pkIcons/089.png"
 }, {
   id: 90,
   name: "Shellder",
   name_cht: "大舌貝",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/090.png"
+  img_src: "pkIcons/090.png"
 }, {
   id: 91,
   name: "Cloyster",
   name_cht: "鐵甲貝",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/091.png"
+  img_src: "pkIcons/091.png"
 }, {
   id: 92,
   name: "Gastly",
   name_cht: "鬼斯",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/092.png"
+  img_src: "pkIcons/092.png"
 }, {
   id: 93,
   name: "Haunter",
   name_cht: "鬼斯通",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/093.png"
+  img_src: "pkIcons/093.png"
 }, {
   id: 94,
   name: "Gengar",
   name_cht: "耿鬼",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/094.png"
+  img_src: "pkIcons/094.png"
 }, {
   id: 95,
   name: "Onix",
   name_cht: "大岩蛇",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/095.png"
+  img_src: "pkIcons/095.png"
 }, {
   id: 96,
   name: "Drowzee",
   name_cht: "素利普",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/096.png"
+  img_src: "pkIcons/096.png"
 }, {
   id: 97,
   name: "Hypno",
   name_cht: "素利拍",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/097.png"
+  img_src: "pkIcons/097.png"
 }, {
   id: 98,
   name: "Krabby",
   name_cht: "大鉗蟹",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/098.png"
+  img_src: "pkIcons/098.png"
 }, {
   id: 99,
   name: "Kingler",
   name_cht: "巨鉗蟹",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/099.png"
+  img_src: "pkIcons/099.png"
 }, {
   id: 100,
   name: "Voltorb",
   name_cht: "雷電球",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/100.png"
+  img_src: "pkIcons/100.png"
 }, {
   id: 101,
   name: "Electrode",
   name_cht: "頑皮彈",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/101.png"
+  img_src: "pkIcons/101.png"
 }, {
   id: 102,
   name: "Exeggcute",
   name_cht: "蛋蛋",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/102.png"
+  img_src: "pkIcons/102.png"
 }, {
   id: 103,
   name: "Exeggutor",
   name_cht: "椰蛋樹",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/103.png"
+  img_src: "pkIcons/103.png"
 }, {
   id: 104,
   name: "Cubone",
   name_cht: "可拉可拉",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/104.png"
+  img_src: "pkIcons/104.png"
 }, {
   id: 105,
   name: "Marowak",
   name_cht: "嘎拉嘎拉",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/105.png"
+  img_src: "pkIcons/105.png"
 }, {
   id: 106,
   name: "Hitmonlee",
   name_cht: "沙瓦郎",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/106.png"
+  img_src: "pkIcons/106.png"
 }, {
   id: 107,
   name: "Hitmonchan",
   name_cht: "艾比郎",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/107.png"
+  img_src: "pkIcons/107.png"
 }, {
   id: 108,
   name: "Lickitung",
   name_cht: "大舌頭",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/108.png"
+  img_src: "pkIcons/108.png"
 }, {
   id: 109,
   name: "Koffing",
   name_cht: "瓦斯彈",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/109.png"
+  img_src: "pkIcons/109.png"
 }, {
   id: 110,
   name: "Weezing",
   name_cht: "雙彈瓦斯",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/110.png"
+  img_src: "pkIcons/110.png"
 }, {
   id: 111,
   name: "Rhyhorn",
   name_cht: "鐵甲犀牛",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/111.png"
+  img_src: "pkIcons/111.png"
 }, {
   id: 112,
   name: "Rhydon",
   name_cht: "鐵甲暴龍",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/112.png"
+  img_src: "pkIcons/112.png"
 }, {
   id: 113,
   name: "Chansey",
   name_cht: "吉利蛋",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/113.png"
+  img_src: "pkIcons/113.png"
 }, {
   id: 114,
   name: "Tangela",
   name_cht: "蔓藤怪",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/114.png"
+  img_src: "pkIcons/114.png"
 }, {
   id: 115,
   name: "Kangaskhan",
   name_cht: "袋龍",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/115.png"
+  img_src: "pkIcons/115.png"
 }, {
   id: 116,
   name: "Horsea",
   name_cht: "墨海馬",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/116.png"
+  img_src: "pkIcons/116.png"
 }, {
   id: 117,
   name: "Seadra",
   name_cht: "海刺龍",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/117.png"
+  img_src: "pkIcons/117.png"
 }, {
   id: 118,
   name: "Goldeen",
   name_cht: "角金魚",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/118.png"
+  img_src: "pkIcons/118.png"
 }, {
   id: 119,
   name: "Seaking",
   name_cht: "金魚王",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/119.png"
+  img_src: "pkIcons/119.png"
 }, {
   id: 120,
   name: "Staryu",
   name_cht: "海星星",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/120.png"
+  img_src: "pkIcons/120.png"
 }, {
   id: 121,
   name: "Starmie",
   name_cht: "寶石海星",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/121.png"
+  img_src: "pkIcons/121.png"
 }, {
   id: 122,
   name: "Mr. Mime",
   name_cht: "吸盤魔偶",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/122.png"
+  img_src: "pkIcons/122.png"
 }, {
   id: 123,
   name: "Scyther",
   name_cht: "飛天螳螂",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/123.png"
+  img_src: "pkIcons/123.png"
 }, {
   id: 124,
   name: "Jynx",
   name_cht: "迷唇姐",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/124.png"
+  img_src: "pkIcons/124.png"
 }, {
   id: 125,
   name: "Electabuzz",
   name_cht: "電擊獸",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/125.png"
+  img_src: "pkIcons/125.png"
 }, {
   id: 126,
   name: "Magmar",
   name_cht: "鴨嘴火龍",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/126.png"
+  img_src: "pkIcons/126.png"
 }, {
   id: 127,
   name: "Pinsir",
   name_cht: "大甲",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/127.png"
+  img_src: "pkIcons/127.png"
 }, {
   id: 128,
   name: "Tauros",
   name_cht: "肯泰羅",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/128.png"
+  img_src: "pkIcons/128.png"
 }, {
   id: 129,
   name: "Magikarp",
   name_cht: "鯉魚王",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/129.png"
+  img_src: "pkIcons/129.png"
 }, {
   id: 130,
   name: "Gyarados",
   name_cht: "暴鯉龍",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/130.png"
+  img_src: "pkIcons/130.png"
 }, {
   id: 131,
   name: "Lapras",
   name_cht: "乘龍",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/131.png"
+  img_src: "pkIcons/131.png"
 }, {
   id: 132,
   name: "Ditto",
   name_cht: "百變怪",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/132.png"
+  img_src: "pkIcons/132.png"
 }, {
   id: 133,
   name: "Eevee",
   name_cht: "伊布",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/133.png"
+  img_src: "pkIcons/133.png"
 }, {
   id: 134,
   name: "Vaporeon",
   name_cht: "水精靈",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/134.png"
+  img_src: "pkIcons/134.png"
 }, {
   id: 135,
   name: "Jolteon",
   name_cht: "雷精靈",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/135.png"
+  img_src: "pkIcons/135.png"
 }, {
   id: 136,
   name: "Flareon",
   name_cht: "火精靈",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/136.png"
+  img_src: "pkIcons/136.png"
 }, {
   id: 137,
   name: "Porygon",
   name_cht: "３Ｄ龍",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/137.png"
+  img_src: "pkIcons/137.png"
 }, {
   id: 138,
   name: "Omanyte",
   name_cht: "菊石獸",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/138.png"
+  img_src: "pkIcons/138.png"
 }, {
   id: 139,
   name: "Omastar",
   name_cht: "多刺菊石獸",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/139.png"
+  img_src: "pkIcons/139.png"
 }, {
   id: 140,
   name: "Kabuto",
   name_cht: "化石盔",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/140.png"
+  img_src: "pkIcons/140.png"
 }, {
   id: 141,
   name: "Kabutops",
   name_cht: "鐮刀盔",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/141.png"
+  img_src: "pkIcons/141.png"
 }, {
   id: 142,
   name: "Aerodactyl",
   name_cht: "化石翼龍",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/142.png"
+  img_src: "pkIcons/142.png"
 }, {
   id: 143,
   name: "Snorlax",
   name_cht: "卡比獸",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/143.png"
+  img_src: "pkIcons/143.png"
 }, {
   id: 144,
   name: "Articuno",
   name_cht: "急凍鳥",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/144.png"
+  img_src: "pkIcons/144.png"
 }, {
   id: 145,
   name: "Zapdos",
   name_cht: "閃電鳥",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/145.png"
+  img_src: "pkIcons/145.png"
 }, {
   id: 146,
   name: "Moltres",
   name_cht: "火焰鳥",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/146.png"
+  img_src: "pkIcons/146.png"
 }, {
   id: 147,
   name: "Dratini",
   name_cht: "迷你龍",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/147.png"
+  img_src: "pkIcons/147.png"
 }, {
   id: 148,
   name: "Dragonair",
   name_cht: "哈克龍",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/148.png"
+  img_src: "pkIcons/148.png"
 }, {
   id: 149,
   name: "Dragonite",
   name_cht: "快龍",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/149.png"
+  img_src: "pkIcons/149.png"
 }, {
   id: 150,
   name: "Mewtwo",
   name_cht: "超夢",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/150.png"
+  img_src: "pkIcons/150.png"
 }, {
   id: 151,
   name: "Mew",
   name_cht: "夢幻",
-  img_src: "http://www.pkparaiso.com/imagenes/xy/sprites/pokemon/151.png"
+  img_src: "pkIcons/151.png"
 }];

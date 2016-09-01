@@ -25,9 +25,9 @@ function showPokemonNotification(pkId, radarId, lat, lng) {
   let pokemon = pokemons[pkId - 1];
   chrome.notifications.create(radarId, {
     type: 'basic',
-    iconUrl: 'icon.png',
+    iconUrl: pokemon.img_src,
     title: `發現 ${pokemon.name_cht} !!!`,
-    message: `地點: ${db[radarId].loc}, 消失時間: ${db[radarId].vanish_at}`
+    message: `地點: ${db[radarId].loc}, 消失時間: ${formateDate(db[radarId].vanish_at)}`
   }, function(notificationId) {});
 }
 
@@ -37,10 +37,6 @@ chrome.notifications.onClicked.addListener(function(notificationId) {
   let lng = db[notificationId].lng;
   chrome.tabs.create({ url: `http://maps.google.com/maps?q=loc:${lat},${lng}` });
 });
-
-function formateDate(date) {
-  return `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
-}
 
 function radarFunc() {
   console.log("searching...");
@@ -69,7 +65,7 @@ function radarFunc() {
           lat: lat,
           lng: lng,
           loc: url.loc,
-          vanish_at: formateDate(new Date(ele["vanish_at"]))
+          vanish_at: ele["vanish_at"]
         };
         showPokemonNotification(pokeId, radarId, lat, lng);
       });
