@@ -3,7 +3,7 @@
 
   "name": "MinMinRadar",
   "description": "Find and show pokemons in real time",
-  "version": "0.1.2",
+  "version": "0.1.3",
 
   "icons":{
     "128":"icon.png"
