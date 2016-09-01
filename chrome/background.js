@@ -125,3 +125,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     reloadWanted();
   }
 });
+
+chrome.runtime.onInstalled.addListener(function (object) {
+    chrome.tabs.create({url: "options.html"}, function (tab) {});
+});
