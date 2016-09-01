@@ -3,7 +3,7 @@ var radarId;
 var wantedLocations = [0, 1, 2];
 var wanted = [3, 6, 9, 131, 143, 149];
 var db = {};
-localStorage["areas"] = localStorage["areas"] || JSON.stringify({tp: true, hc: true, kh: true});
+localStorage["areas"] = localStorage["areas"] || JSON.stringify({tp: true, hc: true, kh: true, nearby: false});
 localStorage["pokemons"] = localStorage["pokemons"] || JSON.stringify({3: true, 6: true, 9: true, 131: true, 143: true, 149: true});
 
 reloadLocations();
@@ -13,8 +13,16 @@ var queryUrls = [
   {loc: "臺北", url: 'https://pkgo.tw/api/pokemons/25.204206,121.603187/24.977332,121.354207'},  
   {loc: "新竹", url: 'https://pkgo.tw/api/pokemons/24.856668,121.022073/24.792551,120.896563'},
   {loc: "高雄", url: 'https://pkgo.tw/api/pokemons/22.690925,120.347358/22.498783,120.265457'},
-  {loc: "附近", url: ''}
+  {loc: "附近", url: 'https://pkgo.tw/api/pokemons/25.204206,121.603187/24.977332,121.354207'}
 ]
+
+function reloadNearbyLocation() {
+  navigator.geolocation.getCurrentPosition(function(position) {
+    let lat = position.coords.latitude;
+    let lng = position.coords.longitude;
+    queryUrls[3].url = `https://pkgo.tw/api/pokemons/${lat + 0.1},${lng + 0.1}/${lat - 0.1},${lng - 0.1}`
+  });
+}
 
 function reloadLocations() {
   let areas = JSON.parse(localStorage["areas"]);
@@ -22,6 +30,10 @@ function reloadLocations() {
   if(areas.tp) wantedLocations.push(0);
   if(areas.hc) wantedLocations.push(1);
   if(areas.kh) wantedLocations.push(2);
+  if(areas.nearby) { 
+    reloadNearbyLocation();
+    wantedLocations.push(3);
+  }
 }
 
 function reloadWanted() {
@@ -58,9 +70,10 @@ function radarFunc() {
   // upper right = 25.232740, 122.112966
   
   queryUrls.forEach(function(url, index) {
-    if(wantedLocations.indexOf(index) == -1) return;
+    if(wantedLocations.indexOf(index) == -1 || url.length == 0) return;
     $.get(url.url, function(data, status) {
       let appeared = data["pokemons"];
+      console.log(`Get data from ${url.url}`);
       console.log(`Found ${appeared.length} pokemons in ${url.loc}`);
       /*
       id = id + 1

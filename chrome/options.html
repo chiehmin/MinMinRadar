@@ -8,15 +8,16 @@
     <script type="text/javascript" src="bootstrap.min.js"></script>
     <script type="text/javascript" src="./pokemons.js"></script>
     <script type="text/javascript" src="./options.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg6TT1ktASLZO0h4diAlBVs6HUW5dwZPA&callback=initMap"></script>
     <style>
-      div {
+      .my_div {
         margin: 5px 5px 5px 5px;
       }
     </style>
     <title>MinMinRadar 設定</title>
   </head>
   <body>
-    <div>
+    <div class="my_div">
       <button id="btnSave" class="btn btn-primary">儲存設定</button>
     </div>
     <h3>通知地點設定</h3>
@@ -30,9 +31,14 @@
       <div class="checkbox">
         <li class="list-group-item"><label><input type="checkbox" id="opt_kh">高雄(旗津周邊)</label></li>
       </div>
+      <div class="checkbox">
+        <li class="list-group-item"><label><input type="checkbox" id="opt_nearby">您的周邊</label></li>
+      </div>
     </ul>
-    <h3>選擇那些神奇寶貝出現時通知</h3>
-    <div id="pokemons-selection" class="container-fluid">
+    <div>
+     <div id="map" style="width: 600px; height: 400px;"></div>
     </div>
+    <h3>選擇那些神奇寶貝出現時通知</h3>
+    <div id="pokemons-selection" class="container-fluid"></div>
   </body>
 </html>
